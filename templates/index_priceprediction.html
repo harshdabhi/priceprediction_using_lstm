@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        body{
+            background-color: cornflowerblue;
+    
+            }
+    
+    </style>
+
+</head>
+<h1>This is Price prediction portal
+</h1>
+
+    
+
+
+<body>
+
+
+    <h2>WARNING</h2> 
+    <p> <b>THIS IS JUST FOR EDUCATION PURPOSE, NO FINANCIAL ADVISE</b> </p>
+    <p> <b>WE ARE NOT LIABLE FOR ANY LOSS OR PROFIT</b> </p>
+
+
+    <form action="/projection" method="POST">
+        <h6>TICK THE CHECKBOX IF UNDERSTAND THE ABOVE STATEMENT
+            <br>
+            YOU ARE PROCEDDING AT YOUR OWN RISK <input type="radio" name="i_understand" required>
+        </h6>
+
+        <div>
+            Email: <br> <input type="email" name="email" required>
+        </div>
+          
+        <br>
+
+        <div>
+            Assest To Predict: <br>
+            <select name="assest">
+                <option value="^NSEI">NIFTY</option>                 
+                <option value="^NSEBANK">BANKNIFTY</option>
+                <option value="BTC-USD">BITCOIN</option>
+                <option value="ETH-USD">ETHEREUM</option>
+
+            </select>
+
+        </div>
+        <br>
+        <br>
+        <div>
+            Interval_period: <br> <br> 
+            15m<input type="radio" name="interval" value="15m" required> <br>
+            30m<input type="radio" name="interval" value="30m" required> <br>
+            60m<input type="radio" name="interval" value="60m" required> <br>
+            1d <input type="radio" name="interval" value="1d" required> <br>                     
+            
+        </div>
+        <br>
+        
+        <div>
+            Password: <br><input type="password" name="password" required>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit Now">   <input type="reset" value="Reset">
+        </div>
+
+        <br>
+        <br>
+        <p>Takes minimum 20 seconds to process</p>
+        <p>Till then have some cookies ......</p>
+    
+
+    </form>
+
+
+    
+</body>
+
+</html>

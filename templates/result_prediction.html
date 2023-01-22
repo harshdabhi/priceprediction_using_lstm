@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projection</title>
+
+
+    <style>
+        body{
+            background-color:cornflowerblue;
+        }
+
+        img{
+        width: 800px;
+        height: 500px;
+        }
+    </style>
+
+    <h1>Price prediction for {{assest}}</h1>
+</head>
+<body>
+    <div>
+        <p>INTERVALS TIME {{interval}}</p>
+        <p>The below projection estimates only directional moves based on historical data</p>
+        <p>It does not give exact price targets</p>
+    </div>
+    <br>
+    <div>
+        <img id="picture" src="data:image/jpeg;base64,{{ img_data }}">
+
+
+
+    </div>
+</body>
+</html>
